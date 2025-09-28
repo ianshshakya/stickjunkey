@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+.s0 {
+  fill: #d9d9d9;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.s1 {
+  fill: #ff89d2;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.s2 {
+  fill: #f5f2f2;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+a{
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+/* On hover and focus, change only the bottom border */
+.bt-style:hover{
+  color: white !important;;
+  background-color: #f55bad;
+  
+}
+.btn:focus, .btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+::-webkit-scrollbar {
+  display: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  overflow-x: hidden;
+}
+.headingforhover{
+  margin-left: -8%;
+  cursor: pointer;
+  position: relative;
+}
+.headingforhover::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 5px;
+  width: 0%;
+  background-color: white; /* You can change color */
+  transition: width 0.5s ease;
+}
+.headingforhover:hover::after {
+  width: 100%;
+}
+.profiles{
+  border:5px solid white;
+}
+.list{
+list-style-type: none;
+}
+.fade-up{
+opacity: 1;
+transform: translateY(20px);
+transition:all 0.5s ease-in-out;
+}
+.fade-up.in,.fade-left.in{
+opacity: 1;
+transform: translate(0px);
+}
+
+
+
+
+
+.category:hover {
+  transform: scale(1.15); /* Scales up by 10% */
+}
+.posters:hover{
+  transform: scale(1.20);
+}
+.carousel-item {
+  transition: opacity 1s ease-in-out !important;
+}
+.carousel-item:not(.active) {
+  display: block;
+  opacity: 0;
+}
+
+.carousel2 {
+  overflow: visible; /* Ensures the scaled image is visible */
+}
+
+
+
+.carousel-item {
+  will-change: transform, opacity;
+}
+
+.section {
+  position: relative;
+  
+  
+  transition: all 0.3s ease;
+  
+  background: rgb(7, 7, 7);
 }
