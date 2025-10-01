@@ -4,6 +4,7 @@ import { AuthContext } from '../Contexts/authContext';
 
 const ProtectedRoute = ({ children }) => {
   const { isAuthenticated, loading } = useContext(AuthContext);
+  
 
   if (loading) {
     return <div>Loading...</div>; // Or a spinner component

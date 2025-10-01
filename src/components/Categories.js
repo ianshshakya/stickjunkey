@@ -45,21 +45,21 @@ return (
         height={350}
         sticker={c1}
         title={""}
-        nav={"/"}
+        nav={"/category/football"}
       />
     </div>
     <div className="container col-12 col-md-8 d-flex flex-column justify-content-center">
       <div className="d-flex flex-wrap justify-content-around my-4">
 
-        <CategoryCard width={200} height={280} sticker={c2} nav={"/"} />
-        <CategoryCard width={200} height={280} sticker={c3} title={""} nav={"/"} />
-        <CategoryCard width={200} height={280} sticker={c4} title={""} nav={"/"} />
+        <CategoryCard width={200} height={280} sticker={c2} nav={"/category/cricket"} />
+        <CategoryCard width={200} height={280} sticker={c3} title={""} nav={"/category/marvel"} />
+        <CategoryCard width={200} height={280} sticker={c4} title={""} nav={"/category/dcmovies"} />
 
       </div>
       <div className="d-flex flex-wrap justify-content-around my-4">
-        <CategoryCard width={200} height={280} sticker={c5} title={""} nav={"/"} />
-        <CategoryCard width={200} height={280} sticker={c6} title={""} nav={"/"} />
-        <CategoryCard width={200} height={280} sticker={c7} title={""} nav={"/"} />
+        <CategoryCard width={200} height={280} sticker={c5} title={""} nav={"/category/anime"} />
+        <CategoryCard width={200} height={280} sticker={c6} title={""} nav={"/category/memeculture"} />
+        <CategoryCard width={200} height={280} sticker={c7} title={""} nav={"/category/miscellaneous"} />
       </div>
     </div>
   </div>

@@ -11,21 +11,21 @@ const NavBar = () => {
     const { isAuthenticated  }= useContext(AuthContext);
     const [showInput] = useState(false);
     const [activeIcon, setActiveIcon] = useState(null);
-
+    
   // Function to handle icon click
   const handleIconClick = (icon) => {
     setActiveIcon(icon); // Set the clicked icon as active
   };
 
-  const styles={
-    fontfamily:{
-        fontFamily:'"Dancing Script", cursive',
-    fontOpticalSizing: 'auto',
-    fontWeight: '<weight>', // Replace <weight> with a valid value like 'bold' or 400
-    fontStyle: 'normal',
-    fontSize:"140%",
-    fontVariationSettings: '"wdth" 100'}
-    }
+//   const styles={
+//     fontfamily:{
+//         fontFamily:'"Dancing Script", cursive',
+//     fontOpticalSizing: 'auto',
+//     fontWeight: '<weight>', // Replace <weight> with a valid value like 'bold' or 400
+//     fontStyle: 'normal',
+//     fontSize:"140%",
+//     fontVariationSettings: '"wdth" 100'}
+//     }
 
    
 
@@ -58,13 +58,13 @@ const NavBar = () => {
                     <ul className="navbar-nav">
 
                         <li className="nav-item">
-                            <Link className="nav-link mx-1" to="/wishlist" onClick={() => handleIconClick("heart")}><i className={`${activeIcon === "heart" ? "fa-solid" : "fa-regular"} fa-heart fa-lg`} style={{color}}></i></Link>
+                            <Link className="nav-link mx-1" to={isAuthenticated ? "/wishlist": "/login"} onClick={() => handleIconClick("heart")}><i className={`${activeIcon === "heart" ? "fa-solid" : "fa-regular"} fa-heart fa-lg`} style={{color}}></i></Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link mx-1" to={isAuthenticated ? "/user": "/login"} onClick={() => handleIconClick("user")}><i className={`${activeIcon === "user" ? "fa-solid" : "fa-regular"} fa-user fa-lg`} style={{color}}></i></Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link mx-1" to="/cart" onClick={() => handleIconClick("cart")}><i className={`${activeIcon ==="cart" ? "bi-cart-fill" : "bi-cart"} bi h5`} style={{color}}></i></Link>
+                            <Link className="nav-link mx-1" to={isAuthenticated ? "/cart": "/login"} onClick={() => handleIconClick("cart")}><i className={`${activeIcon ==="cart" ? "bi-cart-fill" : "bi-cart"} bi h5`} style={{color}}></i></Link>
                         </li>
 
 

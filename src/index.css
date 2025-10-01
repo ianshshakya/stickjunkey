@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.card-wrapper {
+  width: max-content; /* Parent width adjusts to content */
+}
+
+.card {
+  cursor: pointer;
+}
+
+.card .overlay {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease; /* smooth in & out */
+}
+
+.card:hover .overlay {
+  transform: translateY(0);
+  opacity: 1;
+}
+
