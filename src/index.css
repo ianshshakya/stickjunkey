@@ -33,4 +33,14 @@ code {
   transform: translateY(0);
   opacity: 1;
 }
+.table-dark-custom {
+  background-color: black !important;
+  color: white;
+}
+.table-dark-custom th,
+.table-dark-custom td {
+  background-color: black !important;
+  color: white !important;
+}
+
 

@@ -36,7 +36,7 @@ const NavBar = () => {
                 <button className="navbar-toggler border-0 ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <i className="fa-solid fa-bars" style={{color}}></i>
                 </button>
-                <Link onClick={() => handleIconClick(null)} className="navbar-brand mx-5" to="/"><Logo width={150} /></Link>
+                <Link onClick={() => handleIconClick(null)} className="navbar-brand mx-5" to="/"><Logo width={100} dark={true} /></Link>
                 <span className="d-lg-none me-4"><i className="fa-solid fa-magnifying-glass fa-lg" style={{color}}></i></span>
                 
                 {/* <div className={`dropdown  ${showInput ? "" : "d-none d-lg-flex"}`}>

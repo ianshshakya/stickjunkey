@@ -84,7 +84,7 @@ const Home = () => {
                                     <div></div>
                                     <div className={`d-flex flex-column ${isMobile ? '' : 'flex-md-row'} w-100 mx-0`}> {/* Removed margin */}
                                         <h1 className={`${isMobile ? 'col-12 ps-0' : 'col-md-7 ps-md-0 ms-md-n3'} headingforhover text-start mb-3 mb-md-0`} style={fontStyle}>
-                                            STICK <br />YOUR STYLE!
+                                            I'LL <br />KILL HIM!
                                         </h1>
                                         <div className={`${isMobile ? 'col-12 px-2' : 'col-md-3 px-md-3'}`}>
                                             <p className={isMobile ? 'd-none d-md-block' : ''}>

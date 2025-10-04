@@ -19,6 +19,8 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import RouteLogger from "./components/routeLogger";
 import NotFound from "./components/pages/NotFound";
 import Store from "./components/pages/Store";
+import AddItemForm from "./AdminComponents.js/AddItem";
+import Dashboard from "./AdminComponents.js/Dashboard";
 
 function App() {
  
@@ -40,6 +42,8 @@ function App() {
       <Route path="/user" element={<ProtectedRoute><User /></ProtectedRoute>} />
    
       <Route path="/forgotpass" element={<ForgotPass/>}/>
+      
+      <Route path="/dashboard" element={<Dashboard/>}/>
       <Route path="*" element={<NotFound/>}/>
     </Routes>
     <Footer/>

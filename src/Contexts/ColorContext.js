@@ -7,7 +7,7 @@ export const ColorContext = createContext({ color: "#f55bad", backgroundColor: "
 
 const ColorProvider = ({ children }) => {
   const colorValue = {
-    color: "#f55bad",
+    color: "#fff8f8ff",
     backgroundColor: "#FF758F"
   };
 

@@ -58,7 +58,7 @@ const Footer = () => {
 
                     <div className="col-md-3 offset-md-1 mb-3">
 
-                        <Logo width={150} />
+                        <Logo width={150} dark={true} />
                         <ul className="list-unstyled d-flex mt-3">
                             <li className="ms-3"><a className="link-body-emphasis" href="https://www.instagram.com/stickjunkey/" target="_blank"><i className="fa-brands fa-instagram" style={{ color: "white" }}></i></a></li>
                             <li className="ms-3"><a className="link-body-emphasis" href="https://x.com/stickjunkey" target="_blank"><i className="fa-brands fa-x-twitter" style={{ color: "white" }}></i></a></li>

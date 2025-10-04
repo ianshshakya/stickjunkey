@@ -47,7 +47,7 @@ const Poster = () => {
     cloud: {
       width: "100%",
       minHeight: "125vh",
-      backgroundColor: "#FF758F",
+      backgroundColor: "#000000ff",
       padding: "15px",
       position: "relative",
       margin: "0 auto",
@@ -123,9 +123,9 @@ const Poster = () => {
         </div>
         <div className="col-12 col-md-8 d-flex flex-column justify-content-center align-items-center p-3">
           <div style={styles.posterHead}>
-            <i>PREMIUM STICKERS</i>
+            <i className="text-light">PREMIUM STICKERS</i>
           </div>
-          <div className="container" style={styles.posterBody}>
+          <div className="container text-light" style={styles.posterBody}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </div>
         </div>
@@ -135,9 +135,9 @@ const Poster = () => {
       <div className="row w-100 h-auto d-flex align-items-center text-center flex-column flex-md-row">
         <div className="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center p-3 order-md-1 order-2">
           <div style={styles.posterHead}>
-            <i>VINTAGE POSTERS</i>
+            <i className="text-light">VINTAGE POSTERS</i>
           </div>
-          <div className="container" style={styles.posterBody}>
+          <div className="container text-light" style={styles.posterBody}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </div>
         </div>

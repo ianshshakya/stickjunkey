@@ -15,8 +15,8 @@ const Categories = ({scrollY}) => {
       width: "100%", // Remains unchanged
       minHeight: "120vh", // Increased to 150% of viewport height
 
-      backgroundImage: "linear-gradient(to bottom , #faebf8, #faebf8, #FF758F)",
-
+      //backgroundImage: "linear-gradient(to bottom , #faebf8, #faebf8, #FF758F)",
+      backgroundImage: "linear-gradient(to bottom , #eadbebff, #000000ff)",
       padding: "15px",
       position: "relative",
       margin: "0 auto",
